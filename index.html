@@ -75,9 +75,14 @@
       border-radius:18px;
       padding:20px;
       margin-bottom:25px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.05);
-    }
 
+      position:sticky;
+      top:0;
+      z-index:1000;
+
+      box-shadow:0 8px 25px rgba(0,0,0,0.12);
+    }
+    
     .progress-header{
       display:flex;
       justify-content:space-between;
@@ -419,7 +424,6 @@ perguntas.forEach((perguntaObj, perguntaIndex) => {
           >
 
           <div>
-            <strong>${resposta.letra})</strong>
             ${resposta.texto}
           </div>
 
@@ -529,6 +533,7 @@ function finalizarQuiz(){
     "none";
 
   top3Global = Object.entries(contagem)
+    .filter(item => item[1] > 0)
     .sort((a,b) => b[1] - a[1])
     .slice(0,3);
 
