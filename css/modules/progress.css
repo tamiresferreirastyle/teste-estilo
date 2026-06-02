@@ -1,0 +1,36 @@
+/* progress.css - Estilos da barra de progresso */
+
+.progress-container {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 25px;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #dbeafe;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: #2563eb;
+  transition: 0.3s;
+}

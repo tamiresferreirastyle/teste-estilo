@@ -1,0 +1,27 @@
+/* buttons.css - Estilos de botões */
+
+.button {
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  padding: 18px;
+  background: #2563eb;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background: #1d4ed8;
+}
+
+.download-btn {
+  background: #059669;
+}
+
+.download-btn:hover {
+  background: #047857;
+}

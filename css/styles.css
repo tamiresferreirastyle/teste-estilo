@@ -1,0 +1,9 @@
+/* styles.css - Arquivo principal que importa todos os módulos CSS */
+
+@import url('./modules/reset.css');
+@import url('./modules/layout.css');
+@import url('./modules/progress.css');
+@import url('./modules/cards.css');
+@import url('./modules/buttons.css');
+@import url('./modules/results.css');
+@import url('./modules/responsive.css');
