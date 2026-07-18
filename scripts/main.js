@@ -33,6 +33,10 @@ window.app = {
 
     ocultarErro();
 
+    document
+      .getElementById("progressContainer")
+      .classList.add("hidden");
+    
     top3Global = obterTop3(contagem);
 
     exibirResultado(top3Global, estilos);
