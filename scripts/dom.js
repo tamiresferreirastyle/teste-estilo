@@ -52,7 +52,17 @@ export function selecionar(input) {
 
   input.parentElement.classList.add("selected");
 
-  input.closest(".card").classList.remove("erro");
+  const card = input.closest(".card");
+
+  // Remove destaque
+  card.classList.remove("erro");
+
+  // Remove a mensagem de erro desse card
+  const mensagem = card.querySelector(".error-message");
+
+  if (mensagem) {
+    mensagem.remove();
+  }
 }
 
 export function exibirResultado(top3, estilos) {
