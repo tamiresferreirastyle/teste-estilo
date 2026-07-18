@@ -94,12 +94,41 @@ export function exibirResultado(top3, estilos) {
 }
 
 export function exibirErro() {
-  document.getElementById("errorBox").style.display = "block";
+  const errorBox = document.getElementById("errorBox");
 
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
+  errorBox.style.display = "block";
+
+  document.querySelectorAll("#quizForm .card").forEach((card) => {
+    card.classList.remove("erro");
   });
+
+  const cards = document.querySelectorAll("#quizForm .card");
+
+  let primeiraPendente = null;
+  let faltantes = 0;
+
+  cards.forEach((card) => {
+    const respondeu = card.querySelector("input[type='radio']:checked");
+
+    if (!respondeu) {
+      card.classList.add("erro");
+      faltantes++;
+
+      if (!primeiraPendente) {
+        primeiraPendente = card;
+      }
+    }
+  });
+
+  errorBox.textContent =
+    `Você ainda possui ${faltantes} ${faltantes === 1 ? "pergunta" : "perguntas"} sem resposta.`;
+
+  if (primeiraPendente) {
+    primeiraPendente.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  }
 }
 
 export function ocultarErro() {
