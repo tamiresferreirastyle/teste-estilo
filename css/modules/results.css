@@ -1,13 +1,14 @@
 /* results.css - Estilos de resultados e erros */
 
 .error {
-  background: #fee2e2;
-  color: #b91c1c;
-  padding: 16px;
-  border-radius: 14px;
-  margin-top: 20px;
   display: none;
-  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #fff5f5;
+  border-left: 6px solid #d62828;
+  color: #7f1d1d;
+  font-weight: 500;
 }
 
 #resultado {
