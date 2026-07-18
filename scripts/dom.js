@@ -63,6 +63,17 @@ export function selecionar(input) {
   if (mensagem) {
     mensagem.remove();
   }
+
+  const proximoCard = card.nextElementSibling;
+
+  if (proximoCard && proximoCard.classList.contains("card")) {
+    setTimeout(() => {
+      proximoCard.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }, 250);
+  }
 }
 
 export function exibirResultado(top3, estilos) {
