@@ -94,11 +94,9 @@ export function exibirResultado(top3, estilos) {
 }
 
 export function exibirErro() {
-  const errorBox = document.getElementById("errorBox");
+  document.querySelectorAll(".error-message").forEach(msg => msg.remove());
 
-  errorBox.style.display = "block";
-
-  document.querySelectorAll("#quizForm .card").forEach((card) => {
+  document.querySelectorAll("#quizForm .card").forEach(card => {
     card.classList.remove("erro");
   });
 
@@ -107,30 +105,51 @@ export function exibirErro() {
   let primeiraPendente = null;
   let faltantes = 0;
 
-  cards.forEach((card) => {
+  cards.forEach(card => {
+
     const respondeu = card.querySelector("input[type='radio']:checked");
 
     if (!respondeu) {
-      card.classList.add("erro");
+
       faltantes++;
 
       if (!primeiraPendente) {
         primeiraPendente = card;
       }
+
     }
+
   });
 
-  errorBox.textContent =
-    `Você ainda possui ${faltantes} ${faltantes === 1 ? "pergunta" : "perguntas"} sem resposta.`;
-
   if (primeiraPendente) {
+
+    primeiraPendente.classList.add("erro");
+
+    const alerta = document.createElement("div");
+
+    alerta.className = "error-message";
+
+    alerta.innerHTML = `
+      <strong>⚠ Atenção!</strong><br>
+      Você ainda possui <strong>${faltantes}</strong>
+      ${faltantes === 1 ? "pergunta" : "perguntas"}
+      sem resposta. Complete-as para visualizar seu resultado.
+    `;
+
+    primeiraPendente.prepend(alerta);
+
     primeiraPendente.scrollIntoView({
       behavior: "smooth",
-      block: "center",
+      block: "start"
     });
+
   }
 }
 
 export function ocultarErro() {
-  document.getElementById("errorBox").style.display = "none";
+  document.querySelectorAll(".error-message").forEach(msg => msg.remove());
+
+  document.querySelectorAll("#quizForm .card").forEach(card => {
+    card.classList.remove("erro");
+  });
 }
