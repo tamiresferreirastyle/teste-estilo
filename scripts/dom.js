@@ -51,6 +51,8 @@ export function selecionar(input) {
   });
 
   input.parentElement.classList.add("selected");
+
+  input.closest(".card").classList.remove("erro");
 }
 
 export function exibirResultado(top3, estilos) {
