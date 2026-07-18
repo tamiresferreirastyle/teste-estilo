@@ -49,3 +49,20 @@
 .hidden {
   display: none !important;
 }
+
+.quiz-layout {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.progress-sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 30px;
+}
+
+.quiz-content {
+  flex: 1;
+}
