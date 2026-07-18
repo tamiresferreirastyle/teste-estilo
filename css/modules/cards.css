@@ -43,3 +43,13 @@
   border-color: #2563eb !important;
   background: #dbeafe !important;
 }
+
+.card.erro {
+  border: 2px solid #ff6b6b;
+  background: #fff5f5;
+  transition: .3s;
+}
+
+.card.erro .question-title {
+  color: #d62828;
+}
