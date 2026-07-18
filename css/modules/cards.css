@@ -53,3 +53,14 @@
 .card.erro .question-title {
   color: #d62828;
 }
+
+.error-message {
+  margin-bottom: 20px;
+  padding: 16px 18px;
+  border-left: 5px solid #d62828;
+  background: #fff5f5;
+  color: #7f1d1d;
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
