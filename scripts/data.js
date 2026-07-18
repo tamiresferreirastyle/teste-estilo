@@ -15,20 +15,11 @@ export const perguntas = [
     pergunta: "Como você prefere se vestir no dia a dia?",
     respostas: [
       { letra: "A", texto: "Roupas clássicas, bem cortadas, cores neutras." },
-      {
-        letra: "B",
-        texto: "Peças ousadas, misturas de estampas ou cores inesperadas.",
-      },
-      {
-        letra: "C",
-        texto: "Tons suaves, tecidos delicados, detalhes românticos.",
-      },
+      { letra: "B", texto: "Peças ousadas, misturas de estampas ou cores inesperadas." },
+      { letra: "C", texto: "Tons suaves, tecidos delicados, detalhes românticos." },
       { letra: "D", texto: "Confortável, prático, simples." },
       { letra: "E", texto: "Brilho, tecidos luxuosos, peças chamativas." },
-      {
-        letra: "F",
-        texto: "Linhas fortes, contrastes marcantes, impacto visual.",
-      },
+      { letra: "F", texto: "Linhas fortes, contrastes marcantes, impacto visual." },
       { letra: "G", texto: "Minimalista, cortes limpos, cores neutras." },
     ],
   },
@@ -54,10 +45,7 @@ export const perguntas = [
       { letra: "C", texto: "Cores suaves, flores, detalhes delicados." },
       { letra: "D", texto: "Prática, aconchegante." },
       { letra: "E", texto: "Luxuosa, glamourosa." },
-      {
-        letra: "F",
-        texto: "Dramática, contrastes fortes, esculturas marcantes.",
-      },
+      { letra: "F", texto: "Dramática, contrastes fortes, esculturas marcantes." },
       { letra: "G", texto: "Minimalista, clean, essencial." },
     ],
   },
@@ -91,32 +79,12 @@ export const perguntas = [
   {
     pergunta: "Quando pensa em seu guarda-roupa, você busca:",
     respostas: [
-      {
-        letra: "A",
-        texto: "Peças que nunca saem de moda, em tecidos de muita qualidade.",
-      },
-      {
-        letra: "B",
-        texto:
-          "Itens únicos, exclusivos, com tecidos diferentes e interessantes.",
-      },
-      {
-        letra: "C",
-        texto: "Roupas delicadas e femininas, com tecido leves e suaves.",
-      },
-      {
-        letra: "D",
-        texto:
-          "Conforto e praticidade, com tecidos de fácil manutenção e resistentes.",
-      },
-      {
-        letra: "E",
-        texto: "Luxo e glamour, em tecidos com estampa animal print.",
-      },
-      {
-        letra: "F",
-        texto: "Peças impactantes e ousadas, com tecidos mais estruturados.",
-      },
+      { letra: "A", texto: "Peças que nunca saem de moda, em tecidos de muita qualidade.", },
+      { letra: "B", texto: "Itens únicos, exclusivos, com tecidos diferentes e interessantes." },
+      { letra: "C", texto: "Roupas delicadas e femininas, com tecido leves e suaves." },
+      { letra: "D", texto: "Conforto e praticidade, com tecidos de fácil manutenção e resistentes." },
+      { letra: "E", texto: "Luxo e glamour, em tecidos com estampa animal print." },
+      { letra: "F", texto: "Peças impactantes e ousadas, com tecidos mais estruturados." },
       { letra: "G", texto: "Qualidade e tecidos sofisticados." },
     ],
   },
