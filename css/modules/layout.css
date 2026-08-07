@@ -1,18 +1,18 @@
 /* layout.css - Layout principal, header e container */
 
 body {
-  background: #fff7f9;
+  background: #F4F2EF;
   color: #3F3A38;
 }
 
 .header {
-  background: #fff7f9;
-  color: #693936;
-  padding: 50px 20px;
-  text-align: center;
+    background: transparent;
+    color: #5E4B42;
+    border-bottom: 1px solid #DDD8D2;
 }
 
 .header h1 {
+  color:#5E4B42;
   font-size: 38px;
   margin-bottom: 10px;
 }
@@ -20,7 +20,7 @@ body {
 .header p {
   max-width: 700px;
   margin: auto;
-  color: #693936;
+  color: #7D736D;
   font-size: 17px;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 .instructions {
-  background: #fff0f3;
+  background: #FFFFFF;
   border-radius: 18px;
   padding: 25px;
   margin-bottom: 25px;
