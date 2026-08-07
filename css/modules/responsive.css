@@ -15,15 +15,3 @@
     gap: 10px;
   }
 }
-
-@media (max-width: 900px) {
-
-  .quiz-layout {
-    flex-direction: column;
-  }
-
-  .progress-sidebar {
-    width: 100%;
-    position: static;
-  }
-}
