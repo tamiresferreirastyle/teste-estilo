@@ -29,9 +29,9 @@
   transition: 0.2s;
 }
 
-.option label:hover {
-  border-color: #2563eb;
-  background: #eff6ff;
+.option label:hover{
+    border-color:#8B5B58;
+    background:#FAF5F5;
 }
 
 .option input {
@@ -39,14 +39,14 @@
   transform: scale(1.2);
 }
 
-.selected {
-  border-color: #2563eb !important;
-  background: #dbeafe !important;
+.selected{
+    border-color:#7A4542 !important;
+    background:#F8F0F0 !important;
 }
 
 .card.erro {
-  border: 2px solid #ff6b6b;
-  background: #fff5f5;
+  border: 2px solid #944C4C;
+  background: #FCF4F4;
   transition: .3s;
 }
 
